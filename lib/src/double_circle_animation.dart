@@ -106,9 +106,9 @@ class _CircleAnimationState extends State<CircleAnimation>
             ).animate(
               CurvedAnimation(parent: _leftController, curve: Curves.bounceOut),
             );
-        // _leftController
-        //   ..reset()
-        //   ..forward();
+        _leftController
+          ..reset()
+          ..forward();
       }
     });
   }

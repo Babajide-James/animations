@@ -112,13 +112,12 @@ class CatAnimationState extends State<CatAnimation>
 
                   Positioned(
                     bottom: 10,
-                    left: 30,
+                    left: 10,
                     right: 30,
                     child: AnimatedBuilder(
                       animation: _textAnimation,
                       builder: (context, child) => Transform.translate(
                         offset: Offset(_textAnimation.value, 0.0),
-
                         child: Center(
                           child: Text(
                             'Click Me!',
